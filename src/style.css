@@ -1,0 +1,53 @@
+:root {
+  --bg-light: #eed294;
+  --bg-medium: #d6b27f;
+  --bg-dark: #856e4d;
+  --text-normal: #2c1f16;
+}
+
+:root.darkMode {
+  --bg-light: #3f3f3f;
+  --bg-medium: #222222;
+  --bg-dark: #1a1a1a;
+  --text-normal: #ccc;
+}
+
+html, body, #app {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#app {
+  background-color: var(--bg-light);
+  background-image: repeating-radial-gradient( circle at 0 0, transparent 0, var(--bg-light) 40px ), repeating-linear-gradient( var(--bg-dark), var(--bg-medium));
+  color: var(--text-normal);
+}
+
+.fa-spin.hover-spin {
+  animation-name: none;
+}
+
+.fa-spin.hover-spin:hover {
+  animation-name: fa-spin;
+}
+
+.fa-xl {
+  font-size: 32px;
+}
+
+.textLeft {
+  text-align: left;
+}
+
+.textRight {
+  text-align: right;
+}
+
+.card {
+  background-color: var(--bg-medium);
+  border: 2px solid var(--bg-dark);
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+}
